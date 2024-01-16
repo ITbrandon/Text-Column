@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto';
+  font-size: 17px;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bolder;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.hero figure img {
+  margin-right: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.review {
+  width: clamp(10ch,100%,85ch);
+  line-height: 2rem;
+  font-style: italic;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+figcaption a {
+  text-decoration: none;
+  color: black;
+}
+
+figcaption a:visited {
+  color: purple;
+}
+
+figcaption a:hover {
+  opacity: 0.6;
+}
+
+figcaption a:active {
+  color: red;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 769px) {
+
+  .hero {
+    flex-direction: column;
+  }
+
+  figcaption {
+    margin-bottom: 1.2rem;
+  }
+
+  figure {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+}
+
