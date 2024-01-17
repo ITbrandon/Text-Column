@@ -7,9 +7,24 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
+  --BGCOLOR: WHITE;
+  --FONT-COLOR: #1D1D1D;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --BGCOLOR: #1d1d1d;
+    --FONT-COLOR: WHITE;
+  }
+}
+
+
+body {
+  background-color: var(--BGCOLOR);
+  color: var(--FONT-COLOR);
   font-family: 'Roboto';
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 main {
@@ -24,7 +39,7 @@ h1, h2 {
 }
 
 h1 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--FONT-COLOR);
   letter-spacing: 2px;
 }
 
@@ -44,7 +59,7 @@ h2 {
 
 .review {
   width: clamp(10ch,100%,85ch);
-  line-height: 2rem;
+  line-height: 2.2;
   font-style: italic;
 }
 
@@ -58,11 +73,11 @@ figcaption {
 
 figcaption a {
   text-decoration: none;
-  color: black;
+  color: var(--FONT-COLOR);
 }
 
 figcaption a:visited {
-  color: purple;
+  color: var(--FONT-COLOR);
 }
 
 figcaption a:hover {
