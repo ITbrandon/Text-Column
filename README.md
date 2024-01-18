@@ -4,4 +4,4 @@
 
 # Brandon Iticka
 
-# https://itbrandon.github.io/Text-Column/
+# https://itbrandon.github.io/cpnt260-a1-text-column/
